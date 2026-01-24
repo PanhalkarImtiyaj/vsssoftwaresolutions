@@ -12,10 +12,11 @@ import amanImg from '../../assets/team-images/aman.jpeg';
 import mubinaImg from '../../assets/team-images/mubina.png';
 import pravinImg from '../../assets/team-images/pravin-singh.png';
 import ramImg from '../../assets/team-images/ram.jpeg';
-import tejasImg from '../../assets/team-images/tejas.png';
+import manasviImg from '../../assets/team-images/manasvi.png';
+
 import karunaImg from '../../assets/team-images/Karuna.png';
 import priyaImg from '../../assets/team-images/priya patil.png';
-import rashidPImg from '../../assets/team-images/Rashid.png';
+
 import radhikaImg from '../../assets/team-images/Radhika kulkarni HR.png';
 import sanikaImg from '../../assets/team-images/sanika madane.png';
 import abhishekImg from '../../assets/team-images/Abhishek Parekar.png';
@@ -38,17 +39,18 @@ const Team = () => {
         },
         {
             id: 3,
-            name: "Tejas Karekar",
+            name: "Aman Korbu",
             role: "Chief Technology Officer",
-            image: tejasImg,
+            image: amanImg,
             bio: "Technical powerhouse leading our technology stack and mobile development initiatives."
         },
+
         {
             id: 4,
-            name: "Rashid Sir",
-            role: "Business Development Head",
-            image: rashidPImg,
-            bio: "Driving growth and building strategic partnerships to expand VSS's global reach."
+            name: "Mansi",
+            role: "Marketing Head",
+            image: manasviImg,
+            bio: "Strategizing and executing marketing campaigns to enhance VSS's brand presence."
         },
         {
             id: 5,
@@ -102,7 +104,7 @@ const Team = () => {
         {
             id: 12,
             name: "Priya Patil",
-            role: "Chief Operating Officer & Data Engineer",
+            role: "Data Engineer",
             image: priyaImg,
             bio: "Ensuring smooth operations while architecting robust data-driven solutions for clients."
         },
@@ -115,13 +117,6 @@ const Team = () => {
         },
         {
             id: 14,
-            name: "Aman Korbu",
-            role: "Full Stack Developer",
-            image: amanImg,
-            bio: "Expertly managing technical workflows while developing cutting-edge web technologies."
-        },
-        {
-            id: 15,
             name: "Pravin Singh",
             role: "Web Developer",
             image: pravinImg,
@@ -157,7 +152,13 @@ const Team = () => {
                         {vssTeam.map((member) => (
                             <div key={member.id} className="member-card">
                                 <div className="member-image-wrapper">
-                                    <img src={member.image} alt={member.name} className="member-image" />
+                                    <img
+                                        src={member.image}
+                                        alt={member.name}
+                                        className="member-image"
+                                        loading="lazy"
+                                        decoding="async"
+                                    />
                                 </div>
                                 <div className="member-info">
                                     <h3 className="member-name">{member.name}</h3>

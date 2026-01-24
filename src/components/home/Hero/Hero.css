@@ -1,4 +1,7 @@
 .hero {
+    height: 100vh;
+    height: 100dvh;
+    /* Uses dynamic viewport height for mobile browsers */
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -186,9 +189,9 @@
 @media (max-width: 768px) {
     .hero {
         align-items: center;
-        min-height: calc(100vh - 72px);
+        min-height: 100vh;
         padding-top: 0;
-        padding-bottom: 40px;
+        padding-bottom: 0;
         margin-top: 0;
     }
 

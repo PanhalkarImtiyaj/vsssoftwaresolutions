@@ -11,7 +11,7 @@ const About = () => {
           </p>
         </div>
       </section>
-
+      
       <section className="section">
         <div className="container">
           <div className="about-grid">

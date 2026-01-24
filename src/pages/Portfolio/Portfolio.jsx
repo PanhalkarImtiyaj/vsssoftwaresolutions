@@ -40,7 +40,13 @@ const Portfolio = () => {
               <div key={project.id} className="portfolio-card fade-in-up">
                 <div className="portfolio-image">
                   {typeof project.image === 'string' && (project.image.includes('/') || project.image.includes('data:')) ? (
-                    <img src={project.image} alt={project.title} className="project-image" />
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="project-image"
+                      loading="lazy"
+                      decoding="async"
+                    />
                   ) : (
                     <span className="project-emoji">{project.image}</span>
                   )}
