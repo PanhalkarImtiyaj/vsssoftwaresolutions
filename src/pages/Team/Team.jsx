@@ -12,6 +12,7 @@ import amanImg from '../../assets/team-images/aman.jpeg';
 import mubinaImg from '../../assets/team-images/mubina.png';
 import pravinImg from '../../assets/team-images/pravin-singh.png';
 import ramImg from '../../assets/team-images/ram.jpeg';
+import tejasImg from '../../assets/team-images/tejas.png';
 import manasviImg from '../../assets/team-images/manasvi.png';
 
 import karunaImg from '../../assets/team-images/Karuna.png';
@@ -39,9 +40,9 @@ const Team = () => {
         },
         {
             id: 3,
-            name: "Aman Korbu",
+            name: "Tejas Karekar",
             role: "Chief Technology Officer",
-            image: amanImg,
+            image: tejasImg,
             bio: "Technical powerhouse leading our technology stack and mobile development initiatives."
         },
 
@@ -121,6 +122,13 @@ const Team = () => {
             role: "Web Developer",
             image: pravinImg,
             bio: "Dedicated to solving complex problems through efficient and elegant web-based solutions."
+        },
+        {
+            id: 15,
+            name: "Aman Korbu",
+            role: "Full Stack Developer",
+            image: amanImg,
+            bio: "Expertly managing technical workflows while developing cutting-edge web technologies."
         }
     ];
 
